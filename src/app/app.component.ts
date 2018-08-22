@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My Card Application';
   cards = [1, 2, 3, 4];
+  selectedCard = 0;
+
+  selectCard (card) {
+    this.selectedCard = card;
+  }
 }

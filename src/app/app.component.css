@@ -16,3 +16,13 @@
     justify-content: center;
     align-items: center;
 }
+.Card span {
+  display: none;
+}
+.Card.is-active {
+  background-color: green;
+  border-color: darkgreen;
+}
+.Card.is-active span {
+  display: block;
+}
