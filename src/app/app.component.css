@@ -18,6 +18,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.6s;
+    transform-style: preserve-3d;
 }
 .Card span {
   display: none;
@@ -25,7 +27,9 @@
 .Card.is-active {
   background-color: green;
   border-color: darkgreen;
+  transform: rotateY(180deg);
 }
 .Card.is-active span {
   display: block;
+  transform: rotateY(-180deg);
 }
