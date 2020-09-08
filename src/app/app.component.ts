@@ -5,12 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'My Card Application';
-  cards = [1, 2, 3, 4];
-  selectedCard = 0;
 
-  selectCard (card) {
+export class AppComponent {
+  title: String = 'My Card Application';
+  cards: Array<Number> = [1, 2, 3, 4];
+  selectedCard: Number = 0;
+
+  selectCard (card: Number) {
     this.selectedCard = card;
   }
 }
