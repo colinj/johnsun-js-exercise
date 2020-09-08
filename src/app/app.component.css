@@ -18,11 +18,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: 0.6s;
+    transition: .6s;
     transform-style: preserve-3d;
 }
 .Card span {
-  display: none;
+  opacity: 0;
+  transition: none;
 }
 .Card.is-active {
   background-color: green;
@@ -30,6 +31,7 @@
   transform: rotateY(180deg);
 }
 .Card.is-active span {
-  display: block;
+  opacity: 1;
   transform: rotateY(-180deg);
+  transition: opacity .2s linear .2s;
 }
